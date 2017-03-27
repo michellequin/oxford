@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- Michelle Quin and Allyson Gerace -->
+        <title>MyPlaces</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--<link rel="stylesheet" href="themes/d.min.css" />-->
+			<link rel="stylesheet" href="iphone.css">
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+			<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+            <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+            
+           
+    </head>
+    
+    <body>
+	
+        <!-- Home page, loaded automatically, accessible via home button -->
+        <div data-role="page" id="home" data-theme="d">
+			<div data-role="header">
+			<h1>Explore Oxford!</h1>
+			<a data-icon="home" href="#home">Home</a> 
+			<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+			</div>
+
+			<div role="content" class="ui-content">
+			<p>Home</p>
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+
+			<script type="text/javascript"	>
+				// Trying to find a way to load html from a separate file without ajax, which seems to be giving trouble.
+				// Having to repeat header & footer code for each page is annoying! --AG
+				
+				//$(document).ready({
+					//$("#navigation").load("./navigation.html");
+				//});
+				
+				/*
+				$("#navigation").load('navigation.html', function () {
+					$(this).trigger('create');
+				});
+				*/
+				
+				//$('#navigation').load('navigation.html').trigger("create");
+
+			</script>
+
+        </div>
+		
+        <!-- Colleges page, accessible via navbar -->
+        <div data-role="page" id="colleges" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+			</div>
+
+			<div role="content" class="ui-content">
+				<p>Colleges</p>
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+
+        </div>
+        
+		<div data-role="page" id="fooddrink" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+			</div>
+
+			<div role="content" class="ui-content">
+				<p>Food & Drink</p>
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+		
+        </div>
+		
+		<div data-role="page" id="historical" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+			</div>
+
+			<div role="content" class="ui-content">
+				<p>Historical Locations</p>
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+		
+        </div>
+		
+		<div data-role="page" id="social" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+			</div>
+
+			<div role="content" class="ui-content">
+				<p>Social Scene</p>
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+		
+        </div>
+
+         
+		<script type="text/javascript">
+		
+			//unsuccessful attempt at conserving code in the footer...
+			var navbar = 					
+					'<div data-role="navbar">' +
+						'<ul>' +
+							'<li> <a href="#colleges" data-icon="grid">Colleges</a></li>' +
+							'<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>' +
+							'<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>' +
+							'<li> <a href="#social" data-icon="comment">Social Scene</a></li>' +
+						'</ul>' +
+					'</div>';
+		
+			
+			$(document).bind('pagecreate',function(event) {
+				 //$('#navigation').load('navigation.html').trigger('create');
+				 //$('#navigation').load(navbar).trigger('create');
+				 $("#colleges").load("colleges.html");
+				 $("#fooddrink").load("fooddrink.html");
+				 $("#historical").load("historical.html");
+				 $("#social").load("social.html");
+				 //[Some code to refresh the footer so it gets redrawn by Jquery Mobile]  
+			});
+		
+		
+			//$(document).ready(function() {
+				//$("#home").load("home.html");
+				//$("#colleges").load("colleges.html");
+				//$("#fooddrink").load("fooddrink.html");
+				//$("#historical").load("historical.html");
+				//$("#social").load("social.html");
+			//});
+		
+		</script>
+    </body>
+</html>

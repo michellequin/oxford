@@ -1,0 +1,153 @@
+
+
+body {
+    background-color: #dde6ef;
+    width: 100%;
+    color: #222;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+
+
+header {
+   background-color: #006;  /* dark blue */
+   font-size: 20px;
+   line-height: 44px;
+   color: white;
+   padding: 3px;
+   
+}
+
+header.secondary{
+	padding-left: 75px;
+	
+}
+
+#content {
+
+    padding:3px;
+
+}
+
+h1 { font-size: 16px;
+     padding: 6px;
+    }
+
+p { padding: 6px; }
+
+
+ #Wellesley{
+    /*center the image*/
+    display: block; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ #main_nav ul { padding: 0; font-weight: bold; }
+
+ #main_nav li a{
+    display: block;
+   margin: 6px;
+   padding: 9px;
+   border-radius: 10px;  /* rounded corners */
+   list-style-type: none;
+   text-decoration: none;
+   color: #222;
+   
+   /* nice gradient shade on the buttons */
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0, #d4d4d4 100%);
+  background-image: linear-gradient(to bottom, #f8f8f8 0, #d4d4d4 100%);
+
+   border: 1px solid #666; /* dark outline */
+}
+
+#main_nav li:hover {
+  background-color: #eee;
+  background-image: none;
+}
+
+#main_nav li:active {
+  background-color: #ccc;
+  background-image: none;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+
+footer {
+   
+   color: #aaa;
+   background-color: #333;
+   line-height: 30px;
+   padding:  3px;
+   
+}
+
+button {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+margin-top: 10px;
+-webkit-border-image: url("orangeButton.png") 0 14 0 14 stretch;
+width:100px;
+height: 30px;
+
+}
+
+button.location {
+display: inline;
+-webkit-border-image: url("blueButton.png") 0 14 0 14 stretch;
+width:120px;
+height: 30px;
+
+}
+
+button.back{
+/*These lines override the previous styling of buttons*/
+-webkit-border-image: url("greyButton.png") 0 14 0 14 stretch;
+width:60px;
+height: 30px;
+
+/*These lines position the back button inside the header*/
+position:absolute;
+left:16px;
+top:8px;
+
+}
+
+#geolocate{
+	padding: 20px 20 px 20px 20px;
+}
+
+#answer {
+    width: 150px;
+    border: solid;
+}
+
+video{
+        /* video border */
+          border: 1px solid #ccc;
+          padding: 5px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          /* tranzitionstransitions applied to the vodeovideo element */
+          -moz-transition: all 1s ease-in-out;
+          -webkit-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+       }
+
+audio{
+        /* video border */
+          border: 1px solid #ccc;
+          padding: 5px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          background: #ccc;
+         
+       }
