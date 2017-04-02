@@ -1,0 +1,38 @@
+.header-text {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.tigertext {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+article {
+    background-color: black;
+    padding: 10px;
+}
+
+figcaption {
+    width: 100%;
+    border: 1px black solid;
+    padding-top: 10px;
+    text-align: center;
+    background: rgba(204, 204, 204, 0.5);
+    
+}
+
+.game {
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+  }
+
+img {
+    max-width: 800px;
+    margin: auto;
+    padding: auto;
+}
+
