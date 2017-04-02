@@ -15,6 +15,14 @@ article {
     padding: 10px;
 }
 
+figure {
+    border: 2px silver solid;
+    margin: 0.5em;
+    padding: 20px;
+    text-align: center;
+    text-indent: 0;
+}
+
 figcaption {
     width: 100%;
     border: 1px black solid;
@@ -25,13 +33,15 @@ figcaption {
 }
 
 .game {
-    display: inline-block;
+    display: inline;
     margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: auto;
   }
 
 img {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
     padding: auto;
 }
