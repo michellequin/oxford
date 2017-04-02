@@ -1,4 +1,9 @@
-
+#home {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
 
 body {
     background-color: #dde6ef;
