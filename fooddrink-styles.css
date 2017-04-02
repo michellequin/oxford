@@ -22,6 +22,22 @@ figure {
     text-align: center;
     text-indent: 0;
 }
+span {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+ul.game li:hover span{
+          opacity: 1;
+      }
+
 
 figcaption {
     width: 100%;
