@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <!--<link rel="stylesheet" href="themes/d.min.css" />-->
 			<link rel="stylesheet" href="iphone.css">
-			<link rel="stylesheet" href="fooddrink-styles.css">
+			 <link rel="stylesheet" href="themes/d.min.css" />
             <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 			<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
@@ -27,7 +27,14 @@
 
 			<div role="content" class="ui-content">
 			<p>Home</p>
-				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g5xYNzoVSJSAyvAj_CjI26_DRfA" width="90%" height="450"></iframe>
+			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g5xYNzoVSJSAyvAj_CjI26_DRfA" width="90%" height="450"></iframe>
+
+			<ul data-role="listview" style="padding-bottom: 25px;" data-inset="true">
+            <li><a href="#colleges">Colleges</a></li>	
+            <li><a href="#fooddrink">Food and Drinks</a></li>
+            <li><a href="#historical">Historical Locations</a></li>
+            <li><a href="#social">Social Scene</a></li>
+             </ul>
 			</div>
 
 			<div data-role="footer">
@@ -42,34 +49,17 @@
 						</ul>
 					</div>
 					
-				</div>
 				<h4>CS220 Human Computer Interaction 2017</h4>
 			</div>
+			</div>
 
-			<script type="text/javascript"	>
-				// Trying to find a way to load html from a separate file without ajax, which seems to be giving trouble.
-				// Having to repeat header & footer code for each page is annoying! --AG
-				
-				//$(document).ready({
-					//$("#navigation").load("./navigation.html");
-				//});
-				
-				/*
-				$("#navigation").load('navigation.html', function () {
-					$(this).trigger('create');
-				});
-				*/
-				
-				//$('#navigation').load('navigation.html').trigger("create");
-
-			</script>
 
         </div>
 		
         <!-- Colleges page, accessible via navbar -->
         <div data-role="page" id="colleges" data-theme="d">
 		
-			<div data-role="header">
+			<div data-role="header" data-position="inline">
 				<h1>Explore Oxford!</h1>
 				<a data-icon="home" href="#home">Home</a> 
 				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
@@ -78,7 +68,6 @@
 				<p>Colleges</p>
 				
 				<div id="college-img-gal">
-				<div>
 				
 			</div>
 
@@ -98,48 +87,57 @@
 				<h4>CS220 Human Computer Interaction 2017</h4>
 			</div>
 
+        </div>
         </div>
         
-		<div data-role="page" id="fooddrink" data-theme="d">
-		
-			<div data-role="header">
-				<h1>Explore Oxford!</h1>
-			</div>
-
-			<div role="content" class="ui-content">
-				<p>Food & Drink</p>
-			</div>
-
-			<ul class=game style="list-style-type: none">
-            <li><figure><img id=tl src="costa-coffee.jpg">
-             <figcaption>
-                30 Queen Street | Near Bhs, Oxford OX1 1ER
-                <p>Costa Coffee is a coffee and tea chain found throughout Oxford.</p>
-                </figcaption>
-                </figure></li>
-                <li><figure>
-                <img id=tc src="marios.jpg">
-                <figcaption>
-                103 Cowley Rd, Oxford OX4 1HU
-                <p>Mario's is an authentic Italian restaurant on Cowley.</p>
-                </figcaption>
-                </figure>
-                </li>
-                <li><figure><img id=tr src="kebab.jpg">
-                <figcaption>
-                Abingdon and Queen St, Oxford
-                <p>Posh Nosh is a kebab van known for serving drunchies.</p>
-                </figcaption>
-                </figure></li>
-                <li><figure><img id=ml src="benscookies.gif">
-                <figcaption>
-                108-109 The Covered Market, Oxford OX1 3DZ
-                <p>Ben's Cookies sells massive, gooey cookies.</p>
-                </figcaption></figure></li>
-
-         </ul>
-
-			<div data-role="footer">
+         <!-- Start of food page -->
+        <div data-role="page" id="fooddrink" data-theme="d">
+            
+            <div data-role="header" data-position="inline">
+                <h1>Explore Oxford!</h1>
+				<a data-icon="home" href="#home">Home</a> 
+				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+            </div><!-- /header -->
+            
+            <div role="main" class="ui-content">
+                <ul data-role="listview" data-theme="c">
+                <!-- list divider -->
+                <li data-role="list-divider">Food and Drink</li>
+                
+                <!-- list items -->
+				<li><a href="#fooddrink" >
+                	<img src="costa-coffee.jpg">
+                    <h3 class="ui-li-heading">Costa Coffee</h3>
+                    <p class="ui-li-desc">Costa Coffee is a coffee and tea chain found throughout Oxford.</p>
+                    <span class="ui-li-aside">30 Queen Street | Near Bhs, Oxford OX1 1ER</span>
+                    </a>
+                    </li>
+                    <li><a href="#fooddrink" >
+                	<img src="marios.jpg">
+                    <h3 class="ui-li-heading">Mario's</h3>
+                    <p class="ui-li-desc">Mario's is an authentic Italian restaurant on Cowley.</p>
+                     <span class="ui-li-aside">103 Cowley Rd, Oxford OX4 1HU</span>
+                    </a>
+                    </li>
+                    <li><a href="#fooddrink" class="ui-link-inherit">
+                	<img src="kebab.jpg" >
+                    <h3 class="ui-li-heading">Posh Nosh</h3>
+                    <p class="ui-li-desc">Posh Nosh is a kebab van known for serving drunchies.</p>
+                     <span class="ui-li-aside">Abingdon and Queen St, Oxford</span>
+                    </a>
+                    </li>
+                    <li><a href="#fooddrink" class="ui-link-inherit">
+                	<img src="benscookies.gif" >
+                    <h3 class="ui-li-heading">Ben's Cookies</h3>
+                    <p class="ui-li-desc">Ben's Cookies sells massive, gooey cookies.</p>
+                     <span class="ui-li-aside">108-109 The Covered Market, Oxford OX1 3DZ</span>
+                    </a>
+                    </li>
+                </ul>
+                
+            </div><!-- /content -->
+            
+            <div data-role="footer">
 				<div id="navigation">
 				
 					<div data-role="navbar">
@@ -154,8 +152,11 @@
 				</div>
 				<h4>CS220 Human Computer Interaction 2017</h4>
 			</div>
-		
+
         </div>
+        </div>
+
+        <!-- historical page -->
 		
 		<div data-role="page" id="historical" data-theme="d">
 		
