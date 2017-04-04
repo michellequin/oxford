@@ -11,15 +11,6 @@
             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 			<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
             <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
-            <style>
-			
-			.histpic {
-				display: block;
-				margin: auto;
-				
-			}
-			
-			</style>
            
     </head>
     
@@ -77,6 +68,12 @@
 				<div id="college-img-gal">
 					<img src="">
 				</div>
+				
+				
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#oxfordwellesley">Wellesley-Associated Colleges</a></li>
+					<li><a href="#oxfordonly">All Other Colleges</a></li>
+				</ul>
 				
 			</div>
 
@@ -262,7 +259,8 @@
 				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
-			<div data-role="content" class="ui-content">
+		<!-- Page for Social Scene, accessible via navbar -->
+		<div data-role="content" class="ui-content">
 				<p>Social Scene</p>
 			</div>
 
@@ -285,6 +283,120 @@
 			</div>
 		
         </div>
+		
+        <!-- Wellesley-associated colleges page, accessible via colleges page -->
+        <div data-role="page" id="oxfordwellesley" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+				<a data-icon="home" href="#home">Home</a> 
+				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+			</div>
+			<div data-role="content" class="ui-content">
+				<p>Wellesley-Associated Colleges</p>
+				
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#">Lady Margaret Hall</a></li>
+					<li><a href="#">Mansfield College</a></li>
+					<li><a href="#">St. Edmund Hall</a></li>
+					<li><a href="#">St. Peter's</a></li>
+					<li><a href="#">St. Anne's</a></li>
+					<li><a href="#">Worcester College</a></li>
+					<li><a href="#">Pembroke College</a></li>
+					<li><a href="#">St. Catherine's</a></li>
+				</ul>
+				
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+
+        </div>		
+		
+		
+        <!-- Oxford-only page, accessible via colleges page -->
+        <div data-role="page" id="oxfordonly" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+				<a data-icon="home" href="#home">Home</a> 
+				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+			</div>
+			<div data-role="content" class="ui-content">
+				<p>Wellesley-Associated Colleges</p>
+				
+				<ul data-role="listview" data-inset="true" data-autodividers="true">
+					<li><a href="#">All Souls College</a></li>
+					<li><a href="#">Balliol College</a></li>
+					<li><a href="#">Blackfriars</a></li>
+					<li><a href="#">Brasenose College</a></li>
+					<li><a href="#">Campion Hall</a></li>
+					<li><a href="#">Christ Church</a></li>
+					<li><a href="#">Corpus Christi College</a></li>
+					<li><a href="#">Exeter College</a></li>
+					<li><a href="#">Green Templeton College</a></li>
+					<li><a href="#">Harris Machester College</a></li>
+					<li><a href="#">Hertford College</a></li>
+					<li><a href="#">Jesus College</a></li>
+					<li><a href="#">Keble College</a></li>
+					<li><a href="#">Kellogg College</a></li>
+					<li><a href="#">Linacre College</a></li>
+					<li><a href="#">Lincoln College</a></li>
+					<li><a href="#">Magdalen College</a></li>
+					<li><a href="#">Merton College</a></li>
+					<li><a href="#">New College</a></li>
+					<li><a href="#">Nuffield College</a></li>
+					<li><a href="#">Oriel College</a></li>
+					<li><a href="#">The Queen's College</a></li>
+					<li><a href="#">Regent's Park College</a></li>
+					<li><a href="#">St. Antony's College</a></li>
+					<li><a href="#">St. Benet's Hall</a></li>
+					<li><a href="#">St. Cross College</a></li>
+					<li><a href="#">St. Hilda's College</a></li>
+					<li><a href="#">St. Hugh's College</a></li>
+					<li><a href="#">St. John's College</a></li>
+					<li><a href="#">St. Stephen's House</a></li>
+					<li><a href="#">Somerville College</a></li>
+					<li><a href="#">Trinity College</a></li>
+					<li><a href="#">University College</a></li>
+					<li><a href="#">Wadham College</a></li>
+					<li><a href="#">Wolfson College</a></li>
+					<li><a href="#">Wycliffe Hall</a></li>
+				</ul>
+				
+			</div>
+
+			<div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+
+        </div>			
+		
 
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		
@@ -321,8 +433,7 @@
 			});
 			*/
 			
-			//Commenting out because of funkiness in main page
-			/*
+
 			$("#college_img_gal").on("swipeleft",function(e){
 			  //$(this).hide();
 			  index += 1;
@@ -331,7 +442,6 @@
 			  alert(index);
 			  e.target.innerHTML = "<img src="+collegeImageArray[index]+">";
 			});
-			*/
 		
 		
 			//unsuccessful attempt at conserving code in the footer...
