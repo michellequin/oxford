@@ -11,7 +11,15 @@
             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 			<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
             <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
-            
+            <style>
+			
+			.histpic {
+				display: block;
+				margin: auto;
+				
+			}
+			
+			</style>
            
     </head>
     
@@ -20,13 +28,14 @@
         <!-- Home page, loaded automatically, accessible via home button -->
         <div data-role="page" id="home" data-theme="d">
 			<div data-role="header">
-			<h1>Explore Oxford!</h1>
-			<a data-icon="home" href="#home">Home</a> 
-			<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<h1>Explore Oxford!</h1>
+				<a data-icon="home" href="#home">Home</a> 
+				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
 			<div role="content" class="ui-content">
 			<p>Home</p>
+<<<<<<< HEAD
 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g5xYNzoVSJSAyvAj_CjI26_DRfA" width="90%" height="450"></iframe>
 
 			<ul data-role="listview" style="padding-bottom: 25px;" data-inset="true">
@@ -35,6 +44,11 @@
             <li><a href="#historical">Historical Locations</a></li>
             <li><a href="#social">Social Scene</a></li>
              </ul>
+=======
+				
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g5xYNzoVSJSAyvAj_CjI26_DRfA" width="90%" height="450"></iframe>
+				
+>>>>>>> origin/master
 			</div>
 
 			<div data-role="footer">
@@ -53,7 +67,10 @@
 			</div>
 			</div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
         </div>
 		
         <!-- Colleges page, accessible via navbar -->
@@ -64,10 +81,15 @@
 				<a data-icon="home" href="#home">Home</a> 
 				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
-			<div role="content" class="ui-content">
+			<div data-role="content" class="ui-content">
 				<p>Colleges</p>
 				
 				<div id="college-img-gal">
+<<<<<<< HEAD
+=======
+					<img src="">
+				</div>
+>>>>>>> origin/master
 				
 			</div>
 
@@ -90,6 +112,7 @@
         </div>
         </div>
         
+<<<<<<< HEAD
          <!-- Start of food page -->
         <div data-role="page" id="fooddrink" data-theme="d">
             
@@ -138,6 +161,48 @@
             </div><!-- /content -->
             
             <div data-role="footer">
+=======
+		<div data-role="page" id="fooddrink" data-theme="d">
+		
+			<div data-role="header">
+				<h1>Explore Oxford!</h1>
+			</div>
+
+			<div data-role="content" class="ui-content">
+				<p>Food & Drink</p>
+			</div>
+
+			<ul class=game style="list-style-type: none">
+            <li><figure><img id=tl src="costa-coffee.jpg">
+             <figcaption>
+                30 Queen Street | Near Bhs, Oxford OX1 1ER
+                <p>Costa Coffee is a coffee and tea chain found throughout Oxford.</p>
+                </figcaption>
+                </figure></li>
+                <li><figure>
+                <img id=tc src="marios.jpg">
+                <figcaption>
+                103 Cowley Rd, Oxford OX4 1HU
+                <p>Mario's is an authentic Italian restaurant on Cowley.</p>
+                </figcaption>
+                </figure>
+                </li>
+                <li><figure><img id=tr src="kebab.jpg">
+                <figcaption>
+                Abingdon and Queen St, Oxford
+                <p>Posh Nosh is a kebab van known for serving drunchies.</p>
+                </figcaption>
+                </figure></li>
+                <li><figure><img id=ml src="benscookies.gif">
+                <figcaption>
+                108-109 The Covered Market, Oxford OX1 3DZ
+                <p>Ben's Cookies sells massive, gooey cookies.</p>
+                </figcaption></figure></li>
+
+         </ul>
+
+			<div data-role="footer">
+>>>>>>> origin/master
 				<div id="navigation">
 				
 					<div data-role="navbar">
@@ -166,7 +231,7 @@
 				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
-			<div role="content" class="ui-content">
+			<div data-role="main" class="ui-content">
 				<h2>Historical Locations</h2>
 				
 				<p>
@@ -176,42 +241,49 @@
 				
 				<div data-role="collapsible">
 					<h3>The Radcliffe Camera</h3>
+					<img class="histpic" src="./Radcliffe-Camera.jpg">
 					<p>The Radcliffe Camera can only be described as Oxford’s most iconic building. Dominating the small cobbled square in which it’s found, this large, circular building was designed by James Gibbs and built in 1737-1749. Built in the English Palladian style, it forms part of the Bodleian Library complex. It houses mainly English, History and Theology books, and because it’s a working library, only students and scholars are admitted.
 					</p>
 				</div>
 				
 				<div data-role="collapsible">
 					<h3>The Bodleian Library</h3>
+					<img class="histpic" src="./Bodleian_Library_Interior.jpg">
 					<p>While the Radcliffe Camera is off-limits to tourists, the nearby Bodleian Library buildings can be seen on one of its guided tours, and there’s an excellent gift shop too. The Bodleian – known colloquially as ‘The Bod’ – is the nerve centre of this vast library, which is a legal deposit library, meaning it’s entitled to a copy of every book ever published in the UK and Ireland. What you see above the ground constitutes only a small fraction of its overall holdings, which are housed in vast underground networks that few will ever be lucky enough to see. As you walk past the main entrance, you’ll see some huge wooden doors, which are adorned by the crests of all the Oxford colleges.
 					</p>
 				</div>
 				
 				<div data-role="collapsible">
 					<h3>The Bridge of Sighs</h3>
+					<img class="histpic" src="./Bridge-of-Sighs.jpg">
 					<p>Although it’s not really a building as such, no discussion of Oxford’s architecture would feel complete without some mention of the Bridge of Sighs. Completed in 1914, the Bridge of Sighs lies right opposite the entrance to the Bodleian Library, and connects two part of Hertford College (once the college of Brideshead Revisited author Evelyn Waugh). Famous for its similarity to the Bridge of Sighs in Venice, though not actually modelled on it, this one is a little more ornate and provides a popular photo opportunity for tourists, who pose on New College Lane beneath it.
 					</p>
 				</div>
 				
 				<div data-role="collapsible">
 					<h3>The Sheldonian Theatre</h3>
+					<img class="histpic" src="./Sheldonian-Theatre.jpg">
 					<p>This unusually-shaped building was designed by Sir Christopher Wren, and lies adjacent to the Bodleian Library. The building gets its name from the then-chancellor, the Archbishop of Canterbury Gilbert Sheldon. For most of the year it’s used as a concert venue, and in 2008 it was famously the venue of a speech by the Dalai Lama. However, at the start of the academic year it’s the scene of what’s called the Matriculation Ceremony: the centuries-old process all new Oxford students must go through in order to become an official member of the university. It also marks the end of a student’s academic career, as it’s where graduation ceremonies are held on special days throughout the year. Freshers and graduates have been passing through its doors since it was opened in 1669, making it one of Oxford’s most famous and prestigious venues.
 					</p>
 				</div>
 				
 				<div data-role="collapsible">
 					<h3>Oxford Castle</h3>
+					<img class="histpic" src="./Oxford-Castle.jpg">
 					<p>With most of the focus in Oxford being on the university, it’s easy to forget that its history goes back further than the institution that dominates it. A reminder of this lies in the form of Oxford Castle, a partly-ruined Norman castle dating from the 11th century. It replaces an earlier moated motte and bailey castle on the same site. The castle was mostly destroyed in the English Civil War, and what was left of it became a prison, which occupied these buildings and then a set of new ones built from 1785 onwards. This was in use until 1996, when it was transformed into a luxury hotel.
 					</p>
 				</div>
 				
 				<div data-role="collapsible">
 					<h3>Blackwell’s Bookshop</h3>
+					<img class="histpic" src="./Blackwell-Bookshop.jpg">
 					<p>Blackwell’s Bookshop is as much an Oxford institution as some of the revered buildings we’ve already mentioned. The flagship Oxford store – now just one of dozens of branches across the country – began life as a shop measuring just 12ft square. These days it still looks tiny from the outside, but go in via either of its two entrances and you’ll soon discover that it opens out into an Aladdin’s Cave filled to the brim with books on every subject. Since its expansion into neighbouring shops, it’s now spread across several floors, and with a vast basement that goes down several more levels, it’s a building that constantly surprises with nooks and crannies. It’s very easy to get lost in it, and it’s even easier to come out clutching a stack of book purchases bigger than one can realistically carry.
 					</p>
 				</div>
 				
 				<div data-role="collapsible">
 					<h3>Saxon Tower</h3>
+					<img class="histpic" src="./Saxon-Tower.jpg">
 					<p>The Saxon Tower of St Michael at the North Gate lies just off busy Cornmarket Street. So-called because this was the site of the northern gate in the days when Oxford had city walls, the church dates to around 1000-1050, while the tower is Oxford’s oldest building, dating from 1040. On display in the church tower is the cell door of the Oxford Martyrs, who were imprisoned in the adjoining Bocardo Prison before being burnt at the stake just outside the city walls, in what is now Broad Street.
 					</p>
 				</div>				
@@ -244,11 +316,12 @@
 				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
-			<div role="content" class="ui-content">
+			<div data-role="content" class="ui-content">
 				<p>Social Scene</p>
 			</div>
 
 			<div data-role="footer">
+				<p>Source: 	https://www.oxford-royale.co.uk/articles/oxford-buildings.html</p>
 				<div id="navigation">
 				
 					<div data-role="navbar">
@@ -267,8 +340,26 @@
 		
         </div>
 
-         
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		
 		<script type="text/javascript">
+		
+		
+			// Trying to find a way to load html from a separate file without ajax, which seems to be giving trouble.
+			// Having to repeat header & footer code for each page is annoying! --AG
+			
+			//$(document).ready({
+				//$("#navigation").load("./navigation.html");
+			//});
+			
+			/*
+			$("#navigation").load('navigation.html', function () {
+				$(this).trigger('create');
+			});
+			*/
+			
+			//$('#navigation').load('navigation.html').trigger("create");
+				
 		
 			//array of image url strings to be contains in college_img_gal
 			var collegeImageArray = [];
@@ -284,16 +375,21 @@
 			});
 			*/
 			
+			//Commenting out because of funkiness in main page
+			/*
 			$("#college_img_gal").on("swipeleft",function(e){
 			  //$(this).hide();
 			  index += 1;
 			  if(index >= numCollegeImages)
 				index = 0;       
+			  alert(index);
 			  e.target.innerHTML = "<img src="+collegeImageArray[index]+">";
 			});
+			*/
 		
 		
 			//unsuccessful attempt at conserving code in the footer...
+			/*
 			var navbar = 					
 					'<div data-role="navbar">' +
 						'<ul>' +
@@ -303,6 +399,7 @@
 							'<li> <a href="#social" data-icon="comment">Social Scene</a></li>' +
 						'</ul>' +
 					'</div>';
+			*/
 		
 			/*
 			$(document).bind('pagecreate',function(event) {
