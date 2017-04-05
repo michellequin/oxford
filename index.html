@@ -40,7 +40,9 @@
             <li><a class=homelist href="#fooddrink">Food and Drinks</a></li>
             <li><a class=homelist href="#historical">Historical Locations</a></li>
             <li><a class=homelist href="#social">Social Scene</a></li>
-             </ul>
+             </ul>	
+			 
+			 
 			</div>
 
 			<div data-role="footer">
@@ -81,6 +83,8 @@
 					<li><a href="#oxfordwellesley">Wellesley-Associated Colleges</a></li>
 					<li><a href="#oxfordonly">All Other Colleges</a></li>
 				</ul>
+				
+
 				
 			</div>
 
@@ -316,47 +320,76 @@
 				<a class=homebutton data-icon="home" href="#home">Home</a> 
 				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
-			<div data-role="content" class="ui-content">
+			
+			<div data-role="main" class="ui-content">
 				<h2>Wellesley-Associated Colleges</h2>
 				
-				<ul data-role="listview" data-inset="true">
-					<li><a href="#margaret">Lady Margaret Hall</a></li>
-					<li><a href="#mansfield">Mansfield College</a></li>
-					<li><a href="#edmund">St. Edmund Hall</a></li>
-					<li><a href="#peter">St. Peter's</a></li>
-					<li><a href="#anne">St. Anne's</a></li>
-					<li><a href="#worcester">Worcester College</a></li>
-					<li><a href="#catherine">St. Catherine's</a></li>
+				<ul data-role="listview">
+					<li><a href="#margaret" data-rel="popup">Lady Margaret Hall</a></li>
+					<li><a href="#mansfield" data-rel="popup">Mansfield College</a></li>
+					<li><a href="#edmund" data-rel="popup">St. Edmund Hall</a></li>
+					<li><a href="#peter" data-rel="popup">St. Peter's</a></li>
+					<li><a href="#anne" data-rel="popup">St. Anne's</a></li>
+					<li><a href="#worcester" data-rel="popup">Worcester College</a></li>
+					<li><a href="#catherine" data-rel="popup">St. Catherine's</a></li>
 				</ul>
 				
 				<div data-role="popup" id="#margaret" class="college-popup">
-					<img src="">
-					
+					<h4>Lady Margaret Hall</h4>
+					<img src="margaret.png">
+					<p>Lady Margaret Hall (LMH) was founded in 1878 by a grand-niece of the poet William Wordsworth as the first College for women in Oxford.  LMH has been co-educational since 1979 and hosts approximately 395 undergraduates, 213 graduate students and 13 visiting students per academic year.  One of the few Oxford colleges located on the River Cherwell, LMH is in north-central Oxford adjacent to the University Parks on a large, 12-acre site with beautiful gardens and direct access to the river. </p>
+					<h5>Areas of Study</p>
+					<p>Classics, Ancient History, Classical Archaeology, Economics, English, History, Mathematics, Management, Music, Philosophy, Modern Languages, Physics, Politics and International Relations, Psychology, Theology and Religion. Visiting students cannot study natural sciences, except for physics, or modern languages).</p>
 				</div>
+				
 				<div data-role="popup" id="#mansfield" class="college-popup">
-					<img src="">
-					
+					<img src="mansfield.png">
+					<p>Mansfield, Oxford’s smallest college, was founded in 1886 and hosts approximately 220 undergraduates, 130 graduate students and 35 visiting students per year.  Mansfield occupies one of the best sites in Oxford, a short walk from the science area and University libraries.  
+					</p>
+					<h5>Areas of Study</p>
+					<p>English, History, Philosophy, Theology and Religion, Politics, Economics, Management, Geography, Human Sciences, Oriental Studies, Classics, History of Art, Statistics, Finance
+					</p>
 				</div>
 				<div data-role="popup" id="#edmund" class="college-popup">
-					<img src="">
-					
+					<img src="edmund.png">
+					<p>St. Edmund Hall, affectionately know as Teddy Hall, takes its name from St. Edmund of Abingdon, Archbishop of Canterbury, who lived and taught in a house on the grounds in the late 12th century.  The history of St. Edmund Hall goes back to the thirteenth century, and it holds the claim of being “the oldest academical society for the education of undergraduates.” Teddy Hall is centrally located in the center of Oxford just off High Street with a library converted from a 12th-century church.  404 undergraduates, 291 graduate students and 24 visiting students per year study at Teddy Hall.</p>
+					<h5>Areas of Study</h5>
+					<p>Biochemistry, Biomedical Sciences, Chemistry, Comparative Education, Comparative Literature, Czech/Slovak Language/Literature in Translation, Earth Sciences, Economics, Engineering, English, Film Studies, Finance, French, German, History, Law, Management, Materials Science, Math, Philosophy, Politics & International Relations, Psychology, Physics, Russian
+					</p>
 				</div>
 				<div data-role="popup" id="#peter" class="college-popup">
-					<img src="">
-					
+					<img src="peter.png">
+					<p>St. Peter’s, founded in 1929, is one of the youngest colleges at Oxford, with a student body of approximately 340 undergraduates, 188 graduate students and 24 visiting students per academic year.  St. Peter’s occupies a compact site in the center of Oxford within easy reach of all the University libraries, laboratories, and lecture rooms.  The College itself is composed of a number of 18th and 19th century buildings, and a new building opened in 1995.  </p>
+					<h5>Areas of Study</h5>
+					<p>Archaeology, Anthropology, Biological Sciences, Economics, English, History, Management, Math, Modern Languages, Physics, Philosophy, Political Science, Religion
+					</p>
 				</div>
 				<div data-role="popup" id="#anne" class="college-popup">
-					<img src="">
-					
+					<img src="anne.png">
+					<p>St. Anne’s was founded in 1879 as the Society of Home-Students, which gave women the opportunity to attend Oxford University lectures and tutorials. It officially became a College of Oxford University in 1952; it is considered young, at least by Oxford standards. Co-educational since 1979, it sets itself apart by providing a very down-to-earth, friendly, open-minded and stimulating environment for dedicated students.  St. Anne’s is also one of the largest colleges in Oxford, home to approximately 423 undergraduates, 322 graduate students and 33 visiting students.
+					</p>
+					<h5>Areas of Study</h5>
+					<p>Biochemistry, Classical Archaeology and Ancient History, Classics, Computer Science, Economics, English, History, Music, Modern Languages - Italian, Oriental Studies, Philosophy, Politics, Pre-Med, Psychology  
+					</p>
 				</div>
 				<div data-role="popup" id="#worcester" class="college-popup">
-					<img src="">
-					
+					<img src="worcester.png">
+					<p>Worcester College was founded under its current name in 1714, but its origins go back to the later 13th century.  One of Oxford’s most beautiful colleges, Worcester is known for its interesting mix of medieval, eighteenth-century and modern buildings and also for its celebrated lake.  About 428 undergraduates, 146 graduate students and 27 visiting students attend Worcester College yearly.  
+					</p>
+					<h5>Areas of Study</h5>
+					<p>Classics, Ancient History, Philosophy, Religion, French, German, English, History, Geography, Political Science, Economics, Math, Computer Science, Physics
+					</p>
 				</div>
 				<div data-role="popup" id="#catherine" class="college-popup">
-					<img src="">
-					
+					<img src="catherine.png">
+					<p>St. Catherine’s College’s foundation was first laid by Her Majesty the Queen on 4 November 1960 and its first undergraduates were admitted two years later. The College is one of the largest in Oxford; it has over 150 Fellows and Lecturers and has approximately 476 undergraduates, 387 graduate students and 45 visiting students. In addition to its formal academic side it has a wide reputation in music and drama, and in sport.  It has extensive facilities including a large Junior Common Room with a Debating Pit, Television and Games Room, Small Theatre, Music House and Private Dining Room. On site are squash courts, facilities for weight training and a punt house. Close by are a boathouse and playing fields for rugby, soccer and field hockey. It is generally regarded as one of the friendliest and most open colleges in Oxford.
+					</p>
+					<h5>Areas of Study</h5>
+					<p>St Catherine's College is able to offer to those coming as Visiting Students the opportunity to choose from the widest variety of tutorial courses offered by any college at Oxford.
+					ACADEMIC STUDIES TAKEN FOR TUTORIALS IN 2014 - 2015  (This should be seen as an indication of choice rather than a finite list of options): Classics, Computer Science, Economics, English Literature and Language, Geography, History, Human Sciences, History of Art & Architecture, Law, Mathematics, Music, Oriental Studies, Philosophy, Politics and International Relations
+					</p>
 				</div>
+				
 				
 			</div>
 
