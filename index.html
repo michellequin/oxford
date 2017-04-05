@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <!--<link rel="stylesheet" href="themes/d.min.css" />-->
 			 <link rel="stylesheet" href="themes/d.min.css" />
+			 <link rel="stylesheet" href="iphone.css" />
             <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 			<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
@@ -19,19 +20,19 @@
         <div data-role="page" id="home" data-theme="d">
 			<div data-role="header">
 				<h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
 			<div role="content" class="ui-content">
-			<p>Home</p>
+			<h2>Home</h2>
 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g5xYNzoVSJSAyvAj_CjI26_DRfA" width="90%" height="450"></iframe>
 
-			<ul data-role="listview" style="padding-bottom: 25px;" data-inset="true">
-            <li><a href="#colleges">Colleges</a></li>	
-            <li><a href="#fooddrink">Food and Drinks</a></li>
-            <li><a href="#historical">Historical Locations</a></li>
-            <li><a href="#social">Social Scene</a></li>
+			<ul class=homelist data-role="listview" style="padding-bottom: 25px;" data-inset="true">
+            <li><a class=homelist href="#colleges">Colleges</a></li>	
+            <li><a class=homelist href="#fooddrink">Food and Drinks</a></li>
+            <li><a class=homelist href="#historical">Historical Locations</a></li>
+            <li><a class=homelist href="#social">Social Scene</a></li>
              </ul>
 			</div>
 
@@ -58,11 +59,11 @@
 		
 			<div data-role="header" data-position="inline">
 				<h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 			<div data-role="content" class="ui-content">
-				<p>Colleges</p>
+				<h2>Colleges</h2>
 				
 				<div id="college-img-gal">
 					<img src="">
@@ -100,47 +101,63 @@
             
             <div data-role="header" data-position="inline">
                 <h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
             </div><!-- /header -->
             
             <div role="main" class="ui-content">
+            	<h2>Food and Drink</h2>
                 <ul data-role="listview" data-theme="c">
-                <!-- list divider -->
-                <li data-role="list-divider">Food and Drink</li>
                 
                 <!-- list items -->
 				<li><a href="#fooddrink" >
-                	<img src="costa-coffee.jpg">
+                	<img class=foodpic src="costa-coffee.jpg">
                     <h3 class="ui-li-heading">Costa Coffee</h3>
                     <p class="ui-li-desc">Costa Coffee is a coffee and tea chain found throughout Oxford.</p>
-                    <span class="ui-li-aside">30 Queen Street | Near Bhs, Oxford OX1 1ER</span>
+                    <span class="ui-li-count">30 Queen Street | Near Bhs, Oxford OX1 1ER</span>
                     </a>
                     </li>
                     <li><a href="#fooddrink" >
-                	<img src="marios.jpg">
+                	<img class=foodpic src="marios.jpg">
                     <h3 class="ui-li-heading">Mario's</h3>
                     <p class="ui-li-desc">Mario's is an authentic Italian restaurant on Cowley.</p>
-                     <span class="ui-li-aside">103 Cowley Rd, Oxford OX4 1HU</span>
+                     <span class="ui-li-count">103 Cowley Rd, Oxford OX4 1HU</span>
                     </a>
                     </li>
                     <li><a href="#fooddrink" class="ui-link-inherit">
-                	<img src="kebab.jpg" >
+                	<img class=foodpic src="kebab.jpg" >
                     <h3 class="ui-li-heading">Posh Nosh</h3>
                     <p class="ui-li-desc">Posh Nosh is a kebab van known for serving drunchies.</p>
-                     <span class="ui-li-aside">Abingdon and Queen St, Oxford</span>
+                     <span class="ui-li-count">Abingdon and Queen St, Oxford</span>
                     </a>
                     </li>
                     <li><a href="#fooddrink" class="ui-link-inherit">
-                	<img src="benscookies.gif" >
+                	<img class=foodpic src="benscookies.gif" >
                     <h3 class="ui-li-heading">Ben's Cookies</h3>
                     <p class="ui-li-desc">Ben's Cookies sells massive, gooey cookies.</p>
-                     <span class="ui-li-aside">108-109 The Covered Market, Oxford OX1 3DZ</span>
+                     <span class="ui-li-count">108-109 The Covered Market, Oxford OX1 3DZ</span>
                     </a>
                     </li>
                 </ul>
                 
             </div><!-- /content -->
+          <div data-role="footer">
+				<div id="navigation">
+				
+					<div data-role="navbar">
+						<ul>
+							<li> <a href="#colleges" data-icon="grid">Colleges</a></li>
+							<li> <a href="#fooddrink" data-icon="shop">Food and Drinks</a></li>
+							<li> <a href="#historical" data-icon="camera">Historical Locations</a></li>
+							<li> <a href="#social" data-icon="comment">Social Scene</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<h4>CS220 Human Computer Interaction 2017</h4>
+			</div>
+
+        </div>		
             
             <div data-role="footer">
 		<div data-role="page" id="fooddrink" data-theme="d">
@@ -169,61 +186,61 @@
 		
 			<div data-role="header">
 				<h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<h2>Historical Locations</h2>
 				
-				<p>
+				<p class=historical>
 				Oxford, beyond housing the University of Oxford, is home to historical locations
 				including examples of English architecture through the centuries. 
 				</p>
 				
-				<div data-role="collapsible">
-					<h3>The Radcliffe Camera</h3>
+				<div class=historical data-role="collapsible">
+					<h3 class=historical>The Radcliffe Camera</h3>
 					<img class="histpic" src="./Radcliffe-Camera.jpg">
 					<p>The Radcliffe Camera can only be described as Oxford’s most iconic building. Dominating the small cobbled square in which it’s found, this large, circular building was designed by James Gibbs and built in 1737-1749. Built in the English Palladian style, it forms part of the Bodleian Library complex. It houses mainly English, History and Theology books, and because it’s a working library, only students and scholars are admitted.
 					</p>
 				</div>
 				
-				<div data-role="collapsible">
-					<h3>The Bodleian Library</h3>
+				<div class=historical data-role="collapsible">
+					<h3 class=historical>The Bodleian Library</h3>
 					<img class="histpic" src="./Bodleian_Library_Interior.jpg">
 					<p>While the Radcliffe Camera is off-limits to tourists, the nearby Bodleian Library buildings can be seen on one of its guided tours, and there’s an excellent gift shop too. The Bodleian – known colloquially as ‘The Bod’ – is the nerve centre of this vast library, which is a legal deposit library, meaning it’s entitled to a copy of every book ever published in the UK and Ireland. What you see above the ground constitutes only a small fraction of its overall holdings, which are housed in vast underground networks that few will ever be lucky enough to see. As you walk past the main entrance, you’ll see some huge wooden doors, which are adorned by the crests of all the Oxford colleges.
 					</p>
 				</div>
 				
-				<div data-role="collapsible">
-					<h3>The Bridge of Sighs</h3>
+				<div class=historical data-role="collapsible">
+					<h3 class=historical>The Bridge of Sighs</h3>
 					<img class="histpic" src="./Bridge-of-Sighs.jpg">
 					<p>Although it’s not really a building as such, no discussion of Oxford’s architecture would feel complete without some mention of the Bridge of Sighs. Completed in 1914, the Bridge of Sighs lies right opposite the entrance to the Bodleian Library, and connects two part of Hertford College (once the college of Brideshead Revisited author Evelyn Waugh). Famous for its similarity to the Bridge of Sighs in Venice, though not actually modelled on it, this one is a little more ornate and provides a popular photo opportunity for tourists, who pose on New College Lane beneath it.
 					</p>
 				</div>
 				
-				<div data-role="collapsible">
-					<h3>The Sheldonian Theatre</h3>
+				<div class=historical data-role="collapsible">
+					<h3 class=historical>The Sheldonian Theatre</h3>
 					<img class="histpic" src="./Sheldonian-Theatre.jpg">
 					<p>This unusually-shaped building was designed by Sir Christopher Wren, and lies adjacent to the Bodleian Library. The building gets its name from the then-chancellor, the Archbishop of Canterbury Gilbert Sheldon. For most of the year it’s used as a concert venue, and in 2008 it was famously the venue of a speech by the Dalai Lama. However, at the start of the academic year it’s the scene of what’s called the Matriculation Ceremony: the centuries-old process all new Oxford students must go through in order to become an official member of the university. It also marks the end of a student’s academic career, as it’s where graduation ceremonies are held on special days throughout the year. Freshers and graduates have been passing through its doors since it was opened in 1669, making it one of Oxford’s most famous and prestigious venues.
 					</p>
 				</div>
 				
-				<div data-role="collapsible">
+				<div class=historical data-role="collapsible">
 					<h3>Oxford Castle</h3>
 					<img class="histpic" src="./Oxford-Castle.jpg">
 					<p>With most of the focus in Oxford being on the university, it’s easy to forget that its history goes back further than the institution that dominates it. A reminder of this lies in the form of Oxford Castle, a partly-ruined Norman castle dating from the 11th century. It replaces an earlier moated motte and bailey castle on the same site. The castle was mostly destroyed in the English Civil War, and what was left of it became a prison, which occupied these buildings and then a set of new ones built from 1785 onwards. This was in use until 1996, when it was transformed into a luxury hotel.
 					</p>
 				</div>
 				
-				<div data-role="collapsible">
+				<div class=historical data-role="collapsible">
 					<h3>Blackwell’s Bookshop</h3>
 					<img class="histpic" src="./Blackwell-Bookshop.jpg">
 					<p>Blackwell’s Bookshop is as much an Oxford institution as some of the revered buildings we’ve already mentioned. The flagship Oxford store – now just one of dozens of branches across the country – began life as a shop measuring just 12ft square. These days it still looks tiny from the outside, but go in via either of its two entrances and you’ll soon discover that it opens out into an Aladdin’s Cave filled to the brim with books on every subject. Since its expansion into neighbouring shops, it’s now spread across several floors, and with a vast basement that goes down several more levels, it’s a building that constantly surprises with nooks and crannies. It’s very easy to get lost in it, and it’s even easier to come out clutching a stack of book purchases bigger than one can realistically carry.
 					</p>
 				</div>
 				
-				<div data-role="collapsible">
+				<div class=historical data-role="collapsible">
 					<h3>Saxon Tower</h3>
 					<img class="histpic" src="./Saxon-Tower.jpg">
 					<p>The Saxon Tower of St Michael at the North Gate lies just off busy Cornmarket Street. So-called because this was the site of the northern gate in the days when Oxford had city walls, the church dates to around 1000-1050, while the tower is Oxford’s oldest building, dating from 1040. On display in the church tower is the cell door of the Oxford Martyrs, who were imprisoned in the adjoining Bocardo Prison before being burnt at the stake just outside the city walls, in what is now Broad Street.
@@ -233,6 +250,7 @@
 			</div>
 
 			<div data-role="footer">
+			<p>Source: 	https://www.oxford-royale.co.uk/articles/oxford-buildings.html</p>
 				<div id="navigation">
 				
 					<div data-role="navbar">
@@ -254,17 +272,17 @@
 		
 			<div data-role="header">
 				<h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 
 		<!-- Page for Social Scene, accessible via navbar -->
 		<div data-role="content" class="ui-content">
-				<p>Social Scene</p>
+				<h2>Social Scene</h2>
 			</div>
 
 			<div data-role="footer">
-				<p>Source: 	https://www.oxford-royale.co.uk/articles/oxford-buildings.html</p>
+				
 				<div id="navigation">
 				
 					<div data-role="navbar">
@@ -288,11 +306,11 @@
 		
 			<div data-role="header">
 				<h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 			<div data-role="content" class="ui-content">
-				<p>Wellesley-Associated Colleges</p>
+				<h2>Wellesley-Associated Colleges</h2>
 				
 				<ul data-role="listview" data-inset="true">
 					<li><a href="#link">Lady Margaret Hall</a></li>
@@ -330,49 +348,49 @@
 		
 			<div data-role="header">
 				<h1>Explore Oxford!</h1>
-				<a data-icon="home" href="#home">Home</a> 
-				<a data-icon="back" data-rel="back" back-btn="true">Back</a> 
+				<a class=homebutton data-icon="home" href="#home">Home</a> 
+				<a class=backbutton data-icon="back" data-rel="back" back-btn="true">Back</a> 
 			</div>
 			<div data-role="content" class="ui-content">
-				<p>All Other Colleges</p>
+				<h2>All Other Colleges</h2>
 				
-				<ul data-role="listview" data-inset="true" data-autodividers="true">
-					<li>All Souls College</li>
-					<li>Balliol College</li>
-					<li>Blackfriars</li>
-					<li>Brasenose College</li>
-					<li>Campion Hall</li>
-					<li>Christ Church</li>
-					<li>Corpus Christi College</li>
-					<li>Exeter College</li>
-					<li>Green Templeton College</li>
-					<li>Harris Machester College</li>
-					<li>Hertford College</li>
-					<li>Jesus College</li>
-					<li>Keble College</li>
-					<li>Kellogg College</li>
-					<li>Linacre College</li>
-					<li>Lincoln College</li>
-					<li>Magdalen College</li>
-					<li>Merton College</li>
-					<li>New College</li>
-					<li>Nuffield College</li>
-					<li>Oriel College</li>
-					<li>The Queen's College</li>
-					<li>Regent's Park College</li>
-					<li>St. Antony's College</li>
-					<li>St. Benet's Hall</li>
-					<li>St. Cross College</li>
-					<li>St. Hilda's College</li>
-					<li>St. Hugh's College</li>
-					<li>St. John's College</li>
-					<li>St. Stephen's House</li>
-					<li>Somerville College</li>
-					<li>Trinity College</li>
-					<li>University College</li>
-					<li>Wadham College</li>
-					<li>Wolfson College</li>
-					<li>Wycliffe Hall</li>
+				<ul class="collegelist" data-role="listview" data-inset="true" data-autodividers="true">
+					<li class=college>All Souls College</li>
+					<li class=college>Balliol College</li>
+					<li class=college>Blackfriars</li>
+					<li class=college>Brasenose College</li>
+					<li class=college>Campion Hall</li>
+					<li class=college>Christ Church</li>
+					<li class=college>Corpus Christi College</li>
+					<li class=college>Exeter College</li>
+					<li class=college>Green Templeton College</li>
+					<li class=college>Harris Machester College</li>
+					<li class=college>Hertford College</li>
+					<li class=college>Jesus College</li>
+					<li class=college>Keble College</li>
+					<li class=college>Kellogg College</li>
+					<li class=college>Linacre College</li>
+					<li class=college>Lincoln College</li>
+					<li class=college>Magdalen College</li>
+					<li class=college>Merton College</li>
+					<li class=college>New College</li>
+					<li class=college>Nuffield College</li>
+					<li class=college>Oriel College</li>
+					<li class=college>The Queen's College</li>
+					<li class=college>Regent's Park College</li>
+					<li class=college>St. Antony's College</li>
+					<li class=college>St. Benet's Hall</li>
+					<li class=college>St. Cross College</li>
+					<li class=college>St. Hilda's College</li>
+					<li class=college>St. Hugh's College</li>
+					<li class=college>St. John's College</li>
+					<li class=college>St. Stephen's House</li>
+					<li class=college>Somerville College</li>
+					<li class=college>Trinity College</li>
+					<li class=college>University College</li>
+					<li class=college>Wadham College</li>
+					<li class=college>Wolfson College</li>
+					<li class=college>Wycliffe Hall</li>
 				</ul>
 				
 			</div>

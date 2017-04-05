@@ -1,22 +1,62 @@
-#home {
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding: auto;
-}
 
 body {
-    background-color: #dde6ef;
+    background-color: #e6f2ff;
     width: 100%;
     color: #222;
     font-family: Helvetica;
-    font-size: 14px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.historical {
+  background-color: #e6f2ff;
+  color: #7094db;
+  font-color: #7094db;
+}
+
+div.ui-footer.ui-bar-inherit {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a.ui-collapsible-heading-toggle.ui-btn.ui-icon-plus.ui-btn-icon-left.ui-btn-inherit {
+  background-color: #7094db;
+}
+
+a.ui-collapsible-heading-toggle.ui-btn.ui-icon-minus.ui-btn-icon-left.ui-btn-inherit {
+  background-color: #7094db;
+}
+
+#navigation {
+  color: white;
+  border-color: white;
+}
+
+.college {
+  background-color: #e6f2ff;
+  color: #7094db;
+}
+
+ul {
+  color: white;
+  background-color: #7094db;
+}
+
+div.ui-header.ui-bar-inherit {
+  background-color: black;
+  color: white;
 }
 
 
 
 header {
-   background-color: #006;  /* dark blue */
+   background-color: #2e004d;
    font-size: 20px;
    line-height: 44px;
    color: white;
@@ -41,6 +81,10 @@ h1 { font-size: 16px;
 
 p { padding: 6px; }
 
+.foodpic {
+  height: 100%;
+  width: 100%;
+}
 
  #Wellesley{
     /*center the image*/
@@ -89,6 +133,16 @@ footer {
    
 }
 
+.homebutton {
+  color: white;
+  background-color: #7094db;
+}
+
+.backbutton {
+  color: white;
+  background-color: #7094db;
+}
+
 button {
 display: block;
 margin-left: auto;
@@ -108,6 +162,8 @@ width:120px;
 height: 30px;
 
 }
+
+
 
 button.back{
 /*These lines override the previous styling of buttons*/
@@ -160,5 +216,6 @@ audio{
 .histpic {
 				display: block;
 				margin: auto;
+        width: 50%;
 				
 		}
