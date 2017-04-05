@@ -74,8 +74,10 @@
 			<div data-role="content" class="ui-content">
 				<h2>Colleges</h2>
 				
-				<div id="college-img-gal">
-					<img src="">
+				<div id="college-img-gal" style="position:relative;">
+					<div id="college-img">
+						<img src="margaret.png">
+					</div>
 				</div>
 				
 				
@@ -489,17 +491,25 @@
 				
 		
 			//array of image url strings to be contains in college_img_gal
-			var collegeImageArray = [];
+			var collegeImageArray = ["margaret.png","mansfield.png","edmund.png","peter.png",
+									"anne.png","worcester.png","catherine.png"];
+
 			var numCollegeImages = collegeImageArray.length;
 			var index = 0;
 			
-			$("#college_img_gal").on("swipeleft",function(e){
-			  //$(this).hide();
+			$("#college-img-gal").on("swipeleft",function(e){
 			  index += 1;
 			  if(index >= numCollegeImages)
 				index = 0;       
-			  alert(index);
-			  e.target.innerHTML = "<img src="+collegeImageArray[index]+">";
+			  $("#college-img").html('<img src=\"'+collegeImageArray[index]+'\">');
+			});
+			
+			$("#college-img-gal").on("swiperight",function(e){
+			  index -= 1;
+			  if(index < 0)
+				index = numCollegeImages-1;       
+			  $("#college-img").html('<img src=\"'+collegeImageArray[index]+'\">');
+			  
 			});
 		
 			
