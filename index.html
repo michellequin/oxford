@@ -74,9 +74,12 @@
 			<div data-role="content" class="ui-content">
 				<h2>Colleges</h2>
 				
-				<div id="college-img-gal" style="position:relative;">
+				<h3>Gallery</h3>
+				<div id="college-img-gal">
 					<div id="college-img">
+						<img src="swipe_icon.png" style="transform: rotate(180deg);">
 						<img src="margaret.png">
+						<img src="swipe_icon.png">
 					</div>
 				</div>
 				
@@ -500,25 +503,40 @@
 			//array of image url strings to be contains in college_img_gal
 			var collegeImageArray = ["margaret.png","mansfield.png","edmund.png","peter.png",
 									"anne.png","worcester.png","catherine.png"];
-
 			var numCollegeImages = collegeImageArray.length;
+			//index is altered with user swipes, follows left and right
 			var index = 0;
 			
 			$("#college-img-gal").on("swipeleft",function(e){
 			  index += 1;
 			  if(index >= numCollegeImages)
 				index = 0;       
-			  $("#college-img").html('<img src=\"'+collegeImageArray[index]+'\">');
+				
+				//html to be used in new div contents
+				var collImgStr = "<img src=\"swipe_icon.png\" style=\"transform: rotate(180deg);\">"
+						+ "<img src=\"" + collegeImageArray[index] + "\">"
+						+ "<img src=\"swipe_icon.png\">";
+				
+			  $("#college-img").html(collImgStr);
 			});
 			
 			$("#college-img-gal").on("swiperight",function(e){
 			  index -= 1;
 			  if(index < 0)
-				index = numCollegeImages-1;       
-			  $("#college-img").html('<img src=\"'+collegeImageArray[index]+'\">');
+				index = numCollegeImages-1;      
+
+				var collImgStr = "<img src=\"swipe_icon.png\" style=\"transform: rotate(180deg);\">"
+						+ "<img src=\"" + collegeImageArray[index] + "\">"
+						+ "<img src=\"swipe_icon.png\">";
+				
+			  $("#college-img").html(collImgStr);
 			  
 			});
 		
+			//Clicking on popup in college page is equivalent to hitting the back button, closing the popup
+			$(".college-popup").on("click",function(e) {
+				window.history.back();
+			});
 			
 
 		</script>
