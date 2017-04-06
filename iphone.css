@@ -10,10 +10,33 @@ body {
     margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
+figure {
+    margin: 0.5em;
+    padding: 20px;
+    text-align: center;
+    text-indent: 0;
+    }
+
+figcaption {
+    width: 100%;
+    border: 1px black solid;
+    padding: 3px;
+    text-align: center;
+    background: rgba(112, 148, 219, 0.8);
+}
+
 .historical {
   background-color: #e6f2ff;
   color: #7094db;
   font-color: #7094db;
+}
+
+a.ui-link.ui-btn.ui-shadow.ui-corner-all {
+  background-color: #7094db;
 }
 
 div.ui-footer.ui-bar-inherit {

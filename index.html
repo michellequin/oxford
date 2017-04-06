@@ -128,28 +128,28 @@
                 <!-- list items -->
 				<li><a href="#fooddrink" >
                 	<img class=foodpic src="costa-coffee.jpg">
-                    <h3 class="ui-li-heading">Costa Coffee</h3>
+                    <h3 class="ui-li-heading">Costa Coffee<br></br></h3>
                     <p class="ui-li-desc">Costa Coffee is a coffee and tea chain found throughout Oxford.</p>
                     <span class="ui-li-count">30 Queen Street | Near Bhs, Oxford OX1 1ER</span>
                     </a>
                     </li>
                     <li><a href="#fooddrink" >
                 	<img class=foodpic src="marios.jpg">
-                    <h3 class="ui-li-heading">Mario's</h3>
+                    <h3 class="ui-li-heading">Mario's<br></br></h3>
                     <p class="ui-li-desc">Mario's is an authentic Italian restaurant on Cowley.</p>
                      <span class="ui-li-count">103 Cowley Rd, Oxford OX4 1HU</span>
                     </a>
                     </li>
                     <li><a href="#fooddrink" class="ui-link-inherit">
                 	<img class=foodpic src="kebab.jpg" >
-                    <h3 class="ui-li-heading">Posh Nosh</h3>
+                    <h3 class="ui-li-heading">Posh Nosh<br></br></h3>
                     <p class="ui-li-desc">Posh Nosh is a kebab van known for serving drunchies.</p>
                      <span class="ui-li-count">Abingdon and Queen St, Oxford</span>
                     </a>
                     </li>
                     <li><a href="#fooddrink" class="ui-link-inherit">
                 	<img class=foodpic src="benscookies.gif" >
-                    <h3 class="ui-li-heading">Ben's Cookies</h3>
+                    <h3 class="ui-li-heading">Ben's Cookies<br></br></h3>
                     <p class="ui-li-desc">Ben's Cookies sells massive, gooey cookies.</p>
                      <span class="ui-li-count">108-109 The Covered Market, Oxford OX1 3DZ</span>
                     </a>
@@ -284,6 +284,7 @@
 		
         </div>
 		
+		<!-- social page -->
 		<div data-role="page" id="social" data-theme="d">
 		
 			<div data-role="header">
@@ -296,6 +297,64 @@
 		<div data-role="content" class="ui-content">
 				<h2>Social Scene</h2>
 			</div>
+			<ul data-role="listview" data-inset="true">
+					<li><a href="#spcbar" data-rel="popup">St. Peter's Bar</a></li>
+					<li><a href="#thirst" data-rel="popup">Thirst Bar</a></li>
+					<li><a href="#bullingdon" data-rel="popup">Bullingdon</a></li>
+					<li><a href="#winecafe" data-rel="popup">Oxford Wine Cafe</a></li>
+					<li><a href="#dukeofcambridge" data-rel="popup">Duke of Cambridge</a></li>
+				</ul>
+
+                
+                <div data-role="popup" id="spcbar" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<figure>
+					<img class="popphoto" src="spcbar.jpg" alt="St. Peter's Bar">
+					<figcaption> St. Peter's College Bar is known for its cheap pints and relaxed atmosphere <br><b>St. Peter's College, New Inn Hall Street</b></br></figcaption>
+					</figure>
+				</div>
+
+                
+                <div data-role="popup" id="thirst" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<figure>
+					<img class="popphoto" src="thirst.jpg" alt="Thirst Bar">
+					<figcaption> Thirst Bar is known for its funky, lively cocktail bar with DJs <br><b>7-8 Park End Street, Oxford OX1 1HH</b></br></figcaption>
+					</figure>
+				</div>
+
+				<div data-role="popup" id="bullingdon" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<figure>
+					<img class="popphoto" src="bullingdon.jpeg" alt="Bullingdon">
+					<figcaption> The Bullingdon is a gig and comedy venue. <br><b>162 Cowley Road, Oxford OX4 1UE</b></br></figcaption>
+					</figure>
+				</div>
+				
+				<div data-role="popup" id="winecafe" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<figure>
+					<img class="popphoto" src="winecafe.jpg" alt="Oxford Wine Cafe">
+					<figcaption> Oxford Wine Cafe (Summertown) is a much-loved specialist wine bar with jazz on Sundays <br><b>38 South Parade, Summertown, Oxford OX2 7JN</b></br></figcaption>
+					</figure>
+				</div>
+
+				<div data-role="popup" id="dukeofcambridge" data-overlay-theme="a" data-theme="d" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<figure>
+					<img class="popphoto" src="duke.jpg" alt="Duke of Cambridge">
+					<figcaption> Duke of Cambridge is a traditional, professional venue and bar. <br><b>5-6 Little Clarendon Street, Oxford OX1 2HP</b></br></figcaption>
+					</figure>
+				</div>
+
+				<form>
+				<div>
+              	<h3 data-role="list-divider">Suggestions</h3>
+              	<textarea class="form-control" value="" placeholder="Are we missing your favorite spot? Add suggestions here!"></textarea>
+            	</div>
+            	<button type="reset" onclick="return confirm('Thank you for submitting a suggestion! :)')">Submit</button>
+				</form>
+
 
 			<div data-role="footer">
 				
@@ -349,7 +408,7 @@
 				</div>
 				
 				<div data-role="popup" id="mansfield" class="college-popup" data-overlay-theme="a" data-theme="d" data-corners="false">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<img class=popuppic src="mansfield.png">
 					<p>Mansfield, Oxford’s smallest college, was founded in 1886 and hosts approximately 220 undergraduates, 130 graduate students and 35 visiting students per year.  Mansfield occupies one of the best sites in Oxford, a short walk from the science area and University libraries.  
 					</p>
@@ -358,7 +417,7 @@
 					</p>
 				</div>
 				<div data-role="popup" id="edmund" class="college-popup" data-overlay-theme="a" data-theme="d" data-corners="false">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<img class=popuppic src="edmund.png">
 					<p>St. Edmund Hall, affectionately know as Teddy Hall, takes its name from St. Edmund of Abingdon, Archbishop of Canterbury, who lived and taught in a house on the grounds in the late 12th century.  The history of St. Edmund Hall goes back to the thirteenth century, and it holds the claim of being “the oldest academical society for the education of undergraduates.” Teddy Hall is centrally located in the center of Oxford just off High Street with a library converted from a 12th-century church.  404 undergraduates, 291 graduate students and 24 visiting students per year study at Teddy Hall.</p>
 					<h5>Areas of Study</h5>
@@ -366,7 +425,7 @@
 					</p>
 				</div>
 				<div data-role="popup" id="peter" class="college-popup" data-overlay-theme="a" data-theme="d" data-corners="false">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<img class=popuppic src="peter.png">
 					<p>St. Peter’s, founded in 1929, is one of the youngest colleges at Oxford, with a student body of approximately 340 undergraduates, 188 graduate students and 24 visiting students per academic year.  St. Peter’s occupies a compact site in the center of Oxford within easy reach of all the University libraries, laboratories, and lecture rooms.  The College itself is composed of a number of 18th and 19th century buildings, and a new building opened in 1995.  </p>
 					<h5>Areas of Study</h5>
@@ -374,7 +433,7 @@
 					</p>
 				</div>
 				<div data-role="popup" id="anne" class="college-popup" data-overlay-theme="a" data-theme="d" data-corners="false">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<img class=popuppic src="anne.png">
 					<p>St. Anne’s was founded in 1879 as the Society of Home-Students, which gave women the opportunity to attend Oxford University lectures and tutorials. It officially became a College of Oxford University in 1952; it is considered young, at least by Oxford standards. Co-educational since 1979, it sets itself apart by providing a very down-to-earth, friendly, open-minded and stimulating environment for dedicated students.  St. Anne’s is also one of the largest colleges in Oxford, home to approximately 423 undergraduates, 322 graduate students and 33 visiting students.
 					</p>
@@ -383,7 +442,7 @@
 					</p>
 				</div>
 				<div data-role="popup" id="worcester" class="college-popup" data-overlay-theme="a" data-theme="d" data-corners="false">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<img class=popuppic src="worcester.png">
 					<p>Worcester College was founded under its current name in 1714, but its origins go back to the later 13th century.  One of Oxford’s most beautiful colleges, Worcester is known for its interesting mix of medieval, eighteenth-century and modern buildings and also for its celebrated lake.  About 428 undergraduates, 146 graduate students and 27 visiting students attend Worcester College yearly.  
 					</p>
@@ -392,7 +451,7 @@
 					</p>
 				</div>
 				<div data-role="popup" id="catherine" class="college-popup" data-overlay-theme="a" data-theme="d" data-corners="false">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<img class=popuppic src="catherine.png">
 					<p>St. Catherine’s College’s foundation was first laid by Her Majesty the Queen on 4 November 1960 and its first undergraduates were admitted two years later. The College is one of the largest in Oxford; it has over 150 Fellows and Lecturers and has approximately 476 undergraduates, 387 graduate students and 45 visiting students. In addition to its formal academic side it has a wide reputation in music and drama, and in sport.  It has extensive facilities including a large Junior Common Room with a Debating Pit, Television and Games Room, Small Theatre, Music House and Private Dining Room. On site are squash courts, facilities for weight training and a punt house. Close by are a boathouse and playing fields for rugby, soccer and field hockey. It is generally regarded as one of the friendliest and most open colleges in Oxford.
 					</p>
